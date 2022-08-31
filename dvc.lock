@@ -22,6 +22,13 @@ stages:
       params.yaml:
         prepare.seed: 2021
         prepare.split: 0.2
+    outs:
+    - path: artifacts/prepared/test.tsv
+      md5: b2df8ebaf1ac9b1dcb35f0ed466cfd25
+      size: 275233
+    - path: artifacts/prepared/train.tsv
+      md5: af99fa601387742a290214e55f5c2d3b
+      size: 1075609
   featurize:
     cmd: python src/stage_02_featurization.py --config=configs/config.yaml --params=params.yaml
     deps:
