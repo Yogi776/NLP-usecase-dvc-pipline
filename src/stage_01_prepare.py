@@ -1,4 +1,5 @@
 import argparse
+from base64 import encode
 import os
 import shutil
 from tqdm import tqdm
@@ -27,12 +28,25 @@ def main(config_path, params_path):
     split = params["prepare"]["split"]
     seed = params["prepare"]["seed"]
     random.seed(seed)
-
+    
     artifacts = config["artifacts"]
     prepare_data_dir_path = os.path.join(artifacts["ARTIFACTS_DIR"],artifacts["PREPARED_DATA"])
-
     create_directories([prepare_data_dir_path])
+
+    train_data_path = os.path.join(prepare_data_dir_path,artifacts["TRAIN_DATA"])
+    test_data_path = os.path.join(prepare_data_dir_path,artifacts["TEST_DATA"])
+
+
+    encode = "utf8"
+    with open(input_data,encoding=encode) as fd_in:
+        with open(train_data_path,"w",encoding=encode) as fd_out_train:
+            with open(test_data_path,"w",encoding=encode) as df_out_test:
+                pass
+                # process_posts(fd_in,fd_out_train,fd_out_train,"<python>",split)
+
     
+   
+
 
 
 
