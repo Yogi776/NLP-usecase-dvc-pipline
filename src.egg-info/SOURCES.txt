@@ -1,7 +1,9 @@
 README.md
 setup.py
 src/__init__.py
+src/stage_00_template.py
 src/stage_01_prepare.py
+src/stage_02_featurization.py
 src.egg-info/PKG-INFO
 src.egg-info/SOURCES.txt
 src.egg-info/dependency_links.txt

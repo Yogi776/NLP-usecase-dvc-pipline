@@ -6,7 +6,6 @@ Home-page: https://github.com/Yogi776/NLP-usecase-dvc-pipline
 Author: Yogi776
 Author-email: sunny.c17hawke@gmail.com
 License: MIT
-Platform: UNKNOWN
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 
@@ -74,4 +73,3 @@ git rm --cached logs/running_logs.log
 ```
 
 updated by rohan 
-

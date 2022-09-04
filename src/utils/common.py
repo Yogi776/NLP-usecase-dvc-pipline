@@ -18,7 +18,7 @@ def create_directories(path_to_directories: list) -> None:
         logging.info(f"created directory at: {path}")
 
 
-def get_df(path_to_data: str,sep: str= "\t")-> pd.DataFrame:
+def get_df(path_to_data: str,sep: str= "\t") -> pd.DataFrame:
     df = pd.read_csv(
         path_to_data,
         encoding='utf-8',
